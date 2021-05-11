@@ -3,18 +3,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
-/* Aplico una imagen de fondo al propio body */
-
 body {
     background-image: url(../imatges/cover_image.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-
-
-/* De esta forma la lista es horizontal y tiene los puntos ocultos */
 
 .menu ul {
     list-style-type: none;
@@ -50,9 +44,6 @@ body {
     display: block;
 }
 
-
-/* Aplico esta propiedad a varios selectores a la vez con el uso de comas */
-
 .cover h1,
 .info,
 .form,
@@ -71,9 +62,6 @@ footer {
 .form_options {
     list-style-type: none;
 }
-
-
-/* Al comportarse como una tabla hace un salto de línea, lo cual es conveniente en este escenario */
 
 .form_options label {
     display: table-cell;
@@ -104,18 +92,12 @@ footer {
     margin-top: 20px;
 }
 
-
-/* Para hacer que otros elementos se comporten como h3 */
-
 .h3_section {
     display: block;
     font-size: 1.17em;
     margin-top: 1em;
     font-weight: bold;
 }
-
-
-/* El hueco de 500px a traves del cual se ve el background-image del body */
 
 div .void {
     height: 500px;
@@ -136,10 +118,6 @@ div .void {
     padding: 8px;
 }
 
-
-/* Numeros impares con fondo #fff y pares con fondo #ddd
-Poner #fff es redundante en este caso porque el fondo ya es de ese color */
-
 .content_table tr:nth-child(odd) {
     background-color: #fff;
 }
@@ -148,18 +126,11 @@ Poner #fff es redundante en este caso porque el fondo ya es de ese color */
     background-color: #ddd;
 }
 
-
-/* Todas las imagenes tienen esta clase, pero aun asi quise separarlo en una clase diferente
-y no aplicar estas propiedades al selector "img" por si en algún momento quería poner una imagen que no tuviera el efecto */
-
 .element_hover {
     transition: 300ms;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
-
-/* Con esto las imagenes parecen interactivas, ninguna lo es */
 
 .element_hover:hover {
     transform: scale(1.1);
@@ -171,9 +142,6 @@ y no aplicar estas propiedades al selector "img" por si en algún momento querí
     margin-right: auto;
 }
 
-
-/* Solo hay un mapa de imagenes, es más eficente usar una "id" que una "class" */
-
 .centered,
 #county_map {
     display: block;
@@ -184,9 +152,6 @@ y no aplicar estas propiedades al selector "img" por si en algún momento querí
 .maxwidth {
     width: 100%;
 }
-
-
-/* Tenía pensado hacer algo más elaborado con esto, pero no tengo tiempo */
 
 footer {
     height: 100px;
